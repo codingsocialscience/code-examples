@@ -1,5 +1,5 @@
 sum = 0
-for i in range(1,11):
-  print( "Adding", i )
-  sum = sum + i
-print("Sum is", sum)
+for current_number in range(1,11):
+  print( "Adding", current_number )
+  sum = sum + current_number
+print("The sum is", sum)

@@ -22,5 +22,5 @@ for( i in 1:nrow(data) ){
 
 for( node_name in names(degrees) ) {
   degree_value <- degrees[[ node_name ]]
-  print( paste( node_name, 'has the degree of', degree_value ) )
+  print( paste( node_name, 'has a degree of', degree_value ) )
 }

@@ -21,7 +21,7 @@ def variance( list, mean ):
 
   return sum / number_of_items
 
-def print_stars( list ):
+def visualise( list ):
   for item in list:
     item = int( item )
     print( item * '*' )
@@ -40,7 +40,7 @@ for line in open('experimental_data.txt'):
 for condition, measurements in mega_collector.items():
   m = mean( measurements )
   v = variance( measurements , m )
-  list = []
-  list.append( m )
-  list.append( v )
-  print_stars( list )
+  values = []
+  values.append( m )
+  values.append( v )
+  visualise( values )

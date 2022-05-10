@@ -1,6 +1,6 @@
 import statistics
 
-def print_stars( list ):
+def visualise( list ):
   for item in list:
     item = int( item )
     print( item * '*' )
@@ -22,4 +22,4 @@ for condition, measurements in mega_collector.items():
   items = []
   items.append( m )
   items.append( v )
-  print_stars( items )
+  visualise( items )

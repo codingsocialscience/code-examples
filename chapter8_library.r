@@ -1,4 +1,4 @@
-print_stars <- function( list ){
+visualise <- function( list ){
   for( item in list ) {
     item = as.integer( item )
     print( paste( rep( '*', item ) , collapse = "" ) )
@@ -25,9 +25,9 @@ for( i in 1:nrow(data) ){
 
 for( condition in names(mega_collector) ) {
   measurements <- mega_collector[[ condition ]]
-  measurements <- unlist( measurements ) ## transforming them to a simpler list
+  measurements <- unlist( measurements ) ## transforming them into a simpler list
   m <- mean( measurements )
   v <- var( measurements )
   l <- c( m, v )
-  print_stars( l )
+  visualise( l )
 }

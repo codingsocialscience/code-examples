@@ -1,6 +1,6 @@
 sum <- 0
-for( i in 1:10) {
-  print( paste("Adding", i) )
-  sum <- sum + i
+for( current_number in 1:10) {
+  print( paste("Adding", current_number ) )
+  sum <- sum + current_number
 }
-print( paste("Sum is", sum) )
+print( paste("The sum is", sum) )

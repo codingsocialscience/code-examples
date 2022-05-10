@@ -1,4 +1,4 @@
-names_list <- c( 'Cat', 'Dog', 3.1415, 'Pie')
+names_list <- list( 'Cat', 'Dog', 3.1415, 'Pie')
 
 for( name in names_list ){
   print( paste( "Say hello to", name, sep = ' ' ) )

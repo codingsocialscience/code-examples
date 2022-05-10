@@ -1,4 +1,4 @@
-data <- read.csv("emperors.csv", header = F)
+data <- read.csv("emperors.txt", header = F)
 
 for( i in 1:nrow(data) ){
   name <- data[i,1]
@@ -7,5 +7,3 @@ for( i in 1:nrow(data) ){
   start_of_reign <- data[i,4]
   end_of_reign <- data[i,5]
 }
-
-data$name <- data$V1

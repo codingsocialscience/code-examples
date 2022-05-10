@@ -26,7 +26,7 @@ variance <- function( list, mean ){
   return( sum / number_of_items )
 }
 
-print_stars <- function( list ){
+visualise <- function( list ){
   for( item in list ) {
     item = as.integer( item )
     print( paste( rep( '*', item ) , collapse = "" ) )
@@ -53,10 +53,10 @@ for( i in 1:nrow(data) ){
 
 for( condition in names(mega_collector) ) {
   measurements <- mega_collector[[ condition ]]
-  measurements <- unlist( measurements ) ## transforming them to a simpler list
+  measurements <- unlist( measurements ) ## transforming them into a simpler list
   m <- mean( measurements )
   v <- variance( measurements , m )
-  l <- list()
-  l <- c( l, m, v )
-  print_stars( l )
+  values <- list()
+  values <- c( values, m, v )
+  visualise( values )
 }

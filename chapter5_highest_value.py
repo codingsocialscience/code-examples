@@ -1,14 +1,11 @@
 votes = []
 
 for line in open('candidates.csv'):
-
   line = line.split(',')
-
-  candidate_votes = int( line[2] )
-
+  candidate_votes = int( line[3] )
   votes.append( candidate_votes )
 
-votes.sort() ## sorts the list so that lowest value is in index 0
+votes.sort() ## the lowest value is now in index 0
 
-print( "Heighest votes", votes[-1] )
-print( "Second heighests votes", votes[-2] )
+print( "Highest votes", votes[-1] )
+print( "Second-highest votes", votes[-2] )

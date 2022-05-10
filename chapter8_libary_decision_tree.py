@@ -1,4 +1,4 @@
-## create new data matrix for decision tree analysis
+## create new data matrix for decision-tree analysis
 
 import csv
 

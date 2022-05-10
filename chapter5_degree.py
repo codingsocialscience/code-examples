@@ -17,4 +17,4 @@ for line in open('edgelist.txt'):
   degrees[ node2 ] = degrees[ node2 ] + 1
 
 for node_name, degree_value in degrees.items():
-  print( node_name , 'has the degree of:', degree_value )
+  print( node_name , 'has a degree of:', degree_value )

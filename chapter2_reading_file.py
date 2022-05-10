@@ -1,4 +1,4 @@
-for line in open("emperors.csv"):
+for line in open("emperors.txt"):
   line = line.split(",")
   name = line[0]
   birth_year = float( line[1] )
