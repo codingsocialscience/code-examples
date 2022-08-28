@@ -9,5 +9,5 @@ for( i in 1:nrow(data) ){
 votes <- sort( votes )
 item_count <- length( votes )
 
-print( paste( "Highest votes", votes[ item_count -1 ] ) )
-print( paste( "Second-highest votes", votes[item_count -2 ] ) )
+print( paste( "Highest votes", votes[ item_count ] ) )
+print( paste( "Second-highest votes", votes[item_count -1 ] ) )

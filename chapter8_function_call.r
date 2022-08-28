@@ -13,9 +13,3 @@ for( i in 1:nrow(data) ){
   months = fix_format( months )
   print( paste( "Annual salary is", salary * months ) )
 }
-
-## OR
-
-data$salary <- fix_format( data$V1 )
-data$months <- fix_format( data$V2 )
-print( paste( "Annual salary is", data$salary * data$months ) )

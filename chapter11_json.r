@@ -22,6 +22,9 @@ new_entry <- list(
   likes = c('John Smith')
 )
 
-data <- c( data, new_entry )
+## we make new entry a list to ensure it is percieved as a dictionary when joining items
+data <- c( data, list( new_entry ) )
 
-write( toJSON( data ) , file = 'data2.json' )
+print( data )
+
+write( toJSON( data, auto_unbox = TRUE ) , file = 'data2.json' )
