@@ -1,6 +1,7 @@
 import csv
 
-for row in csv.reader( open("emperors.csv") ):
+for row in csv.reader( open("emperors_full.csv") ):
+  print( row )
   name = row[0]
   birth_year = float( row[1] )
   death_year = float( row[2] )
