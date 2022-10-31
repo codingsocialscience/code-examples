@@ -29,3 +29,7 @@ for line in csv.DictReader( open('wvs.csv') ):
             for variable in independent:
                 dd.append( line[variable] )
             independent_data.append( dd )
+
+from sklearn import tree
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit( independent_data , dependent_data )
